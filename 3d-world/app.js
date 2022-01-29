@@ -20,7 +20,7 @@ function main () {
     const loader = new THREE.TextureLoader()
     //'https://threejs.org/manual/examples/resources/images/equirectangularmaps/tears_of_steel_bridge_2k.jpg'
     const texture = loader.load (
-        './IMG_20220129_162810_1.jpg',
+        'https://raw.githubusercontent.com/Decryptus007/3D-World/main/3d-world/IMG_20220129_162810_1.jpg',
         () => {
             const rt = new THREE.WebGLCubeRenderTarget(texture.image.height)
             rt.fromEquirectangularTexture(renderer, texture)
